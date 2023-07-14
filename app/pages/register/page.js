@@ -26,10 +26,7 @@ const db = getFirestore(app);
 
 const Register = () => {
   const items = ['Item 1', 'Item 2', 'Item 3'];
-  const [list, setList] = useState([
-    { id: 'Ih5qzWIivSMQX1mQfhoG', Apellido: 'Alvarez', Nombre: 'Micaela' },
-    { id: 'U399AObOCxJuc88gRyPy', Nombre: 'Mauri', Apellido: 'Alvarez' },
-  ]);
+  const [list, setList] = useState([]);
   const [showDiv, setShowDiv] = useState(false);
 
   useEffect(() => {
@@ -50,9 +47,10 @@ const Register = () => {
 
   const handleClick = () => {
     const ordersCollection = collection(db, 'invitado');
-    addDoc(ordersCollection, { Apellido: 'Tosoroni', Nombre: 'Nicolas' }).then(
-      ({ id }) => console.log('creado')
-    );
+    addDoc(ordersCollection, {
+      Apellido: 'Tosoroni',
+      Nombre: 'Augusto',
+    }).then(({ id }) => console.log('creado'));
   };
 
   const show = () => {

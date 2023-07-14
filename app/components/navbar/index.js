@@ -14,11 +14,11 @@ const Navbar = () => {
         <Link className="fromcenter f1" href="/pages/Party">
           Party
         </Link>
-        <Link className="fromcenter f1" href="/pages/Schedule">
-          Schedule
+        <Link className="fromcenter f1" href="/pages/schedule">
+          Cronograma
         </Link>
-        <Link className="fromcenter f1" href="/pages/Travel">
-          Travel
+        <Link className="fromcenter f1" href="/pages/map">
+          Mapa
         </Link>
         <Link className="fromcenter f1" href="/pages/photos">
           Photos
