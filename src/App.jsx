@@ -6,6 +6,8 @@ import Photos from './pages/photos';
 import Spotify from './pages/spotify';
 import Register from './pages/register';
 import FAQ from './pages/faq';
+import TourPage from './pages/tour';
+import GuestList from './pages/guestList';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <Route path="/pages/photos" element={<Photos />} />
         <Route path="/pages/spotify" element={<Spotify />} />
         <Route path="/pages/register" element={<Register />} />
+        <Route path="/pages/turismo" element={<TourPage />} />
         <Route path="/pages/faq" element={<FAQ />} />
+        <Route path="/pages/list" element={<GuestList />} />
       </Routes>
     </div>
   );

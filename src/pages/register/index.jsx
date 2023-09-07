@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import Navbar from '../../components/navbar';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import deco3 from '../../assets/deco/deco3.png';
 // import { doc, collection, getDoc, getDocs, getFirestore, addDoc } from 'firebase/firestore';
 import { collection, getDocs, getFirestore, addDoc } from 'firebase/firestore';
 import {
@@ -9,11 +14,8 @@ import {
   Label,
   Input,
   Button,
-  Table,
-  TableRow,
-  TableCell,
-  TableHeading,
   Select,
+  StyledRegister,
 } from './styles';
 
 const firebaseConfig = {
@@ -31,10 +33,13 @@ const Register = () => {
   // const items = ['Item 1', 'Item 2', 'Item 3'];
   const [list, setList] = useState([]);
   const [showDiv, setShowDiv] = useState(false);
+  const [showButton, setShowButton] = useState(false);
   const [nombre, setNombre] = useState('');
   const [apellido, setApellido] = useState('');
+  const [password, setPassword] = useState('');
   const [restriccionAlimentaria, setRestriccionAlimentaria] = useState('');
   const [formularioEnviado, setFormularioEnviado] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // const ref = doc(db, 'invitado', 'Ih5qzWIivSMQX1mQfhoG');
@@ -76,62 +81,92 @@ const Register = () => {
     console.log(usuario); // Aquí puedes hacer lo que quieras con el objeto usuario
 
     setFormularioEnviado(true);
+    setShowButton(true);
   };
 
-  const show = () => {
-    console.log(list);
+  const viewCredentials = () => {
     setShowDiv(!showDiv);
+  };
+  const viewList = (pass) => {
+    if (pass === 'mica') {
+      navigate('/pages/list');
+    }
   };
 
   return (
-    <div>
-      <h1>Registrate como invitado</h1>
-      <Navbar />
-
-      <p>
-        A través de este formulario podés registrar los participantes al
-        casamiento:
-      </p>
-      <FormularioContainer>
-        {/* <h2>Formulario de Usuario</h2> */}
-        {formularioEnviado ? (
-          <p>¡Formulario enviado correctamente!</p>
-        ) : (
-          <Form onSubmit={handleSubmit}>
-            <div>
-              <Label htmlFor="nombre">Nombre:</Label>
-              <Input
-                type="text"
-                id="nombre"
-                value={nombre}
-                onChange={(e) => setNombre(e.target.value)}
-                required
-              />
-            </div>
-            <div>
-              <Label htmlFor="apellido">Apellido:</Label>
-              <Input
-                type="text"
-                id="apellido"
-                value={apellido}
-                onChange={(e) => setApellido(e.target.value)}
-                required
-              />
-            </div>
-            <div>
-              <Label htmlFor="dropdown">Restricción Alimentaria:</Label>
-              <Select
-                id="dropdown"
-                value={restriccionAlimentaria}
-                onChange={(e) => setRestriccionAlimentaria(e.target.value)}
-              >
-                <option value=""></option>
-                <option value="celiaco">celiaco</option>
-                <option value="diabetico">diabetico</option>
-                <option value="vegano">vegano</option>
-              </Select>
-            </div>
-            {/* <div>
+    <Container maxWidth={'lg'} disableGutters>
+      <Box sx={{ bgcolor: '#f4f0ef' }}>
+        <Navbar />
+        <StyledRegister>
+          <Typography
+            variant="h5"
+            component="h2"
+            paddingTop={1}
+            paddingLeft={3}
+            sx={{
+              fontFamily: ' Comfortaa, cursive',
+            }}
+          >
+            Registrate como invitado
+          </Typography>
+          <div className="decoImg">
+            <img src={deco3} alt="photo" />
+          </div>
+          <Typography
+            variant="h6"
+            component="h2"
+            margin={2}
+            sx={{
+              fontFamily: ' Comfortaa, cursive',
+            }}
+          >
+            A través de este formulario podés registrar los participantes al
+            casamiento:
+          </Typography>
+          <FormularioContainer>
+            {/* <h2>Formulario de Usuario</h2> */}
+            {formularioEnviado ? (
+              <p>¡Formulario enviado correctamente!</p>
+            ) : (
+              <Form onSubmit={handleSubmit}>
+                <div>
+                  <Label htmlFor="nombre">Nombre:</Label>
+                  <Input
+                    type="text"
+                    id="nombre"
+                    value={nombre}
+                    onChange={(e) => setNombre(e.target.value)}
+                    required
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="apellido">Apellido:</Label>
+                  <Input
+                    type="text"
+                    id="apellido"
+                    value={apellido}
+                    onChange={(e) => setApellido(e.target.value)}
+                    required
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="dropdown">Restricción Alimentaria:</Label>
+                  <Select
+                    id="dropdown"
+                    value={restriccionAlimentaria}
+                    onChange={(e) => setRestriccionAlimentaria(e.target.value)}
+                  >
+                    <option value=""></option>
+                    <option value="celiaco">Celiaco</option>
+                    <option value="diabetico">Diabetico</option>
+                    <option value="vegano">Vegano</option>
+                    <option value="vegetariano">Vegetariano</option>
+                    <option value="intolerancia">
+                      Intolerancia a la lactosa
+                    </option>
+                  </Select>
+                </div>
+                {/* <div>
               <Label htmlFor="restriccionAlimentaria">Restricción Alimentaria:</Label>
               <Input
                 type="text"
@@ -140,46 +175,60 @@ const Register = () => {
                 onChange={e => setRestriccionAlimentaria(e.target.value)}
               />
             </div> */}
-            <Button type="submit">Enviar</Button>
-          </Form>
-        )}
-      </FormularioContainer>
-      {/* <button onClick={handleClick}>crear</button> */}
-      <div>
-        <button
-          onClick={() => {
-            setFormularioEnviado(false);
-            setNombre('');
-            setApellido('');
-            setRestriccionAlimentaria('');
-          }}
-        >
-          Cargar nuevo invitado
-        </button>
-      </div>
-      <div>
-        <button onClick={show}>Mostrar</button>
-      </div>
+                <Button type="submit">Enviar</Button>
+              </Form>
+            )}
+          </FormularioContainer>
+          {/* <button onClick={handleClick}>crear</button> */}
+          {showButton && (
+            <Box
+              marginBottom={3}
+              marginTop={3}
+              display={'flex'}
+              justifyContent={'center'}
+              alignItems={'center'}
+            >
+              <Button
+                onClick={() => {
+                  setFormularioEnviado(false);
+                  setNombre('');
+                  setApellido('');
+                  setRestriccionAlimentaria('');
+                }}
+              >
+                Cargar nuevo invitado
+              </Button>
+            </Box>
+          )}
 
-      {showDiv && (
-        <div>
-          <Table>
-            <TableRow>
-              <TableHeading>Apellido</TableHeading>
-              <TableHeading>Nombre</TableHeading>
-              <TableHeading>Restriccion alimentaria</TableHeading>
-            </TableRow>
-            {list.map((item, index) => (
-              <TableRow key={index}>
-                <TableCell>{item.Apellido}</TableCell>
-                <TableCell>{item.Nombre}</TableCell>
-                <TableCell>{item.restriccion}</TableCell>
-              </TableRow>
-            ))}
-          </Table>
-        </div>
-      )}
-    </div>
+          <Box>
+            <Button type="submit" onClick={viewCredentials}>
+              Mirar listado de invitados
+            </Button>
+          </Box>
+          {showDiv && (
+            <div>
+              <Form onSubmit={handleSubmit}>
+                <div>
+                  <Label htmlFor="apellido">Password:</Label>
+                  <Input
+                    type="text"
+                    id="apellido"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <Button type="button" onClick={() => viewList(password)}>
+                  Ver listado
+                </Button>
+              </Form>
+            </div>
+          )}
+        </StyledRegister>
+      </Box>
+    </Container>
   );
 };
 

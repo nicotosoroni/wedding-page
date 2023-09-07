@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
-import { GoogleMap, Marker } from '@react-google-maps/api';
+import { GoogleMap, MarkerF } from '@react-google-maps/api';
+
 import { StyledMap } from './styles';
 
 export default function Map() {
@@ -12,7 +13,7 @@ export default function Map() {
         center={center}
         mapContainerClassName="map-container"
       >
-        <Marker position={center} />
+        <MarkerF position={center} />
       </GoogleMap>
     </StyledMap>
   );

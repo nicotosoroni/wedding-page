@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledRegister = styled.div`
+export const StyledGestlist = styled.div`
   .decoImg {
     display: flex;
     justify-content: center;
@@ -21,13 +21,6 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Comfortaa', cursive;
-  & div {
-    margin: 10px 0;
-  }
-  & label {
-    padding-right: 10px;
-  }
 `;
 
 export const Label = styled.label`
@@ -49,9 +42,33 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   padding: 10px 20px;
-  background-color: rgb(193 188 140);
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+`;
+
+export const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+`;
+
+export const TableRow = styled.tr`
+  background-color: #f2f2f2;
+`;
+
+export const TableCell = styled.td`
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+`;
+
+export const TableHeading = styled.th`
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: rgb(193 188 140);
+  color: white;
 `;

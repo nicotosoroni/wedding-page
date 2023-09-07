@@ -22,7 +22,7 @@ const CountDown = () => {
     setMinutos(Math.floor((distance % hour) / minute));
     setSegundos(Math.floor((distance % minute) / second));
   }, second);
-  console.log(x);
+  // console.log(x);
 
   return (
     <CountDownStyles>
@@ -58,6 +58,7 @@ const CountDown = () => {
           {/* </div> */}
         </div>
       </div>
+      <p style={{ display: 'none' }}>{x}</p>
     </CountDownStyles>
   );
 };

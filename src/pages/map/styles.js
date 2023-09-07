@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FAQStyles = styled.div`
+export const StyledMap = styled.div`
   .decoImg {
     display: flex;
     justify-content: center;

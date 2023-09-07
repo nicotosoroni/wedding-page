@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const NavbarStyles = styled.div`
-  width: 75%;
+  /*
   margin: 15px auto;
   z-index: 10;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  font-family: 'Comfortaa', cursive;
+  align-items: center; */
+  /* font-family: 'Comfortaa', cursive; */
 
-  a {
+  /* a {
     height: auto;
     font-size: 20px;
     text-align: center;
@@ -37,5 +37,5 @@ export const NavbarStyles = styled.div`
 
   a.fromleft:after {
     transform-origin: 0 50%;
-  }
+  } */
 `;
