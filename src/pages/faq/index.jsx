@@ -23,9 +23,9 @@ const Faq = () => {
           >
             Preguntas frecuentes
           </Typography>
-          <div className="decoImg">
-            <img src={deco6} alt="photo" />
-          </div>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco4} alt="photo" />
+          </Box>
           <Typography
             variant="h6"
             component="h2"
@@ -99,9 +99,10 @@ const Faq = () => {
             </li>
           </ul>
           {/* ----------------------------------------------- */}
-          <div className="decoImg">
-            <img src={deco4} alt="photo" />
-          </div>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco6} alt="photo" />
+          </Box>
+          <hr />
           <Typography
             variant="h6"
             component="h2"
@@ -127,9 +128,10 @@ const Faq = () => {
             </li>
           </ul>
           {/* ----------------------------------------------- */}
-          <div className="decoImg">
-            <img src={deco6} alt="photo" />
-          </div>
+          <hr />
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco4} alt="photo" />
+          </Box>
           <Typography
             variant="h6"
             component="h2"
@@ -238,9 +240,9 @@ const Faq = () => {
               </Typography>
             </li>
           </ul>
-          <div className="decoImg">
-            <img src={deco4} alt="photo" />
-          </div>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco6} alt="photo" />
+          </Box>
         </FAQStyles>
       </Box>
     </Container>

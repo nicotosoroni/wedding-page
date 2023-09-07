@@ -53,17 +53,17 @@ export const StyledBody = styled.div`
   }
 
   .decoImg {
-    max-height: 200px;
+    max-height: 130px;
     width: auto;
     height: auto;
     @media (max-width: 900px) {
-      max-height: 150px;
+      max-height: 110px;
     }
     @media (max-width: 700px) {
-      max-height: 140px;
+      max-height: 90px;
     }
     @media (max-width: 500px) {
-      max-height: 90px;
+      max-height: 80px;
     }
   }
 
@@ -79,4 +79,13 @@ export const StyledBody = styled.div`
       font-size: 25px;
     }
   }
+`;
+
+export const Button = styled.button`
+  padding: 10px 20px;
+  background-color: rgb(193 188 140);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 `;

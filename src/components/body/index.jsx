@@ -5,7 +5,8 @@ import deco3 from '../../assets/deco/deco3.png';
 import deco4 from '../../assets/deco/deco4.png';
 import deco5 from '../../assets/deco/deco5.png';
 import deco6 from '../../assets/deco/deco6.png';
-import { StyledBody } from './styles';
+import { useNavigate } from 'react-router-dom';
+import { StyledBody, Button } from './styles';
 import Navbar from '../navbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
@@ -13,6 +14,10 @@ import Box from '@mui/material/Box';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Body = () => {
+  const navigate = useNavigate();
+  const viewGift = () => {
+    navigate('/pages/gift');
+  };
   return (
     <Container maxWidth={false} disableGutters>
       <StyledBody>
@@ -42,7 +47,7 @@ const Body = () => {
             }}
           >
             ¡Nos casamos! y estaríamos muy felices si nos pudieran acompañar en
-            este dia tan especial para nosotros”.
+            este día tan especial para nosotros.
           </Typography>
         </Box>
         <hr />
@@ -74,7 +79,7 @@ const Body = () => {
         </Box>
         <hr />
         <div>
-          <img className="decoImg" src={deco3} alt="photo" />
+          <img className="decoImg" src={deco4} alt="photo" />
         </div>
         <Box
           sx={{
@@ -106,11 +111,12 @@ const Body = () => {
           </Typography>
         </Box>
         <div>
-          <img className="decoImg" src={deco4} alt="photo" />
+          <img className="decoImg" src={deco3} alt="photo" />
         </div>
+        <hr />
         <Box
           sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}
-          margin={5}
+          margin={4}
         >
           <InstagramIcon />
           <Typography
@@ -125,7 +131,7 @@ const Body = () => {
           </Typography>
         </Box>
         <div>
-          <img className="decoImg" src={deco5} alt="photo" />
+          <img className="decoImg" src={deco4} alt="photo" />
         </div>
         <Box
           sx={{
@@ -166,25 +172,43 @@ const Body = () => {
               />
             </svg>
           </Box>
-          <Box
-            className="clothes"
-            sx={{ display: 'flex', justifyContent: 'center' }}
-          >
-            <Typography
-              variant="h4"
-              component="h2"
-              paddingLeft={2}
-              sx={{
-                fontFamily: ' Comfortaa, cursive',
-              }}
-            >
-              : Elegante Sport.
-            </Typography>
-          </Box>
         </Box>
+        <Box
+          marginTop={2}
+          marginBottom={4}
+          className="clothes"
+          sx={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <Typography
+            variant="h4"
+            component="h2"
+            paddingLeft={2}
+            sx={{
+              fontFamily: ' Comfortaa, cursive',
+            }}
+          >
+            Elegante Sport.
+          </Typography>
+        </Box>
+        <div>
+          <img className="decoImg" src={deco5} alt="photo" />
+        </div>
         <hr />
         <CountDown />
         <hr />
+        <div>
+          <img className="decoImg" src={deco4} alt="photo" />
+        </div>
+        <Box
+          marginTop={2}
+          marginBottom={4}
+          className="clothes"
+          sx={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <Button type="button" onClick={() => viewGift()}>
+            Regalo
+          </Button>
+        </Box>
         <div>
           <img className="decoImg" src={deco6} alt="photo" />
         </div>

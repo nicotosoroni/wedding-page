@@ -8,6 +8,7 @@ import Register from './pages/register';
 import FAQ from './pages/faq';
 import TourPage from './pages/tour';
 import GuestList from './pages/guestList';
+import Gift from './pages/gift';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/pages/turismo" element={<TourPage />} />
         <Route path="/pages/faq" element={<FAQ />} />
         <Route path="/pages/list" element={<GuestList />} />
+        <Route path="/pages/gift" element={<Gift />} />
       </Routes>
     </div>
   );

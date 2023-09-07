@@ -4,6 +4,7 @@ import { useLoadScript } from '@react-google-maps/api';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco6.png';
 import { StyledMap } from './styles';
 
@@ -28,9 +29,9 @@ const MapPage = () => {
           >
             Mapa
           </Typography>
-          <div className="decoImg">
-            <img src={deco6} alt="photo" />
-          </div>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco4} alt="photo" />
+          </Box>
           <Typography
             variant="h6"
             component="h2"

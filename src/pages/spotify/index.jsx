@@ -27,9 +27,9 @@ const Spotify = () => {
           >
             Cargá tu música favorita
           </Typography>
-          <div className="decoImg">
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco4} alt="photo" />
-          </div>
+          </Box>
           <Typography
             variant="h6"
             component="h2"
@@ -38,9 +38,10 @@ const Spotify = () => {
               fontFamily: ' Comfortaa, cursive',
             }}
           >
-            Ingresando a través del siguient enlace vas a poder acceder a la
-            lista de reproducción del casamiento para que suenen todos tus temas
-            preferidos!
+            Ingresando a través del siguiente enlace vas a poder acceder a la
+            lista de reproducción del casamiento.
+            <br />
+            ¡Para que suenen todos tus temas preferidos!
           </Typography>
 
           {/* <div>
@@ -75,9 +76,9 @@ const Spotify = () => {
               </svg>
             </Box>
           </Link>
-          <div className="decoImg">
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco6} alt="photo" />
-          </div>
+          </Box>
         </StyledMusic>
       </Box>
     </Container>

@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import deco3 from '../../assets/deco/deco3.png';
+import deco4 from '../../assets/deco/deco4.png';
 // import { doc, collection, getDoc, getDocs, getFirestore, addDoc } from 'firebase/firestore';
 import { collection, getDocs, getFirestore, addDoc } from 'firebase/firestore';
 import {
@@ -109,9 +110,9 @@ const Register = () => {
           >
             Registrate como invitado
           </Typography>
-          <div className="decoImg">
-            <img src={deco3} alt="photo" />
-          </div>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco4} alt="photo" />
+          </Box>
           <Typography
             variant="h6"
             component="h2"
@@ -226,6 +227,9 @@ const Register = () => {
               </Form>
             </div>
           )}
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco3} alt="photo" />
+          </Box>
         </StyledRegister>
       </Box>
     </Container>

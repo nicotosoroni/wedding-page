@@ -2,6 +2,7 @@ import Navbar from '../../components/navbar';
 import { StyledSchedule } from './styles';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco3.png';
 import Typography from '@mui/material/Typography';
 
@@ -22,9 +23,9 @@ const Schedule = () => {
           Cronograma
         </Typography>
         <StyledSchedule>
-          <div className="decoImg">
-            <img src={deco6} alt="photo" />
-          </div>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco4} alt="photo" />
+          </Box>
           <Box
             sx={{
               bgcolor: '#f4f0ef',
@@ -32,6 +33,9 @@ const Schedule = () => {
             }}
           >
             Próximamente
+          </Box>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco6} alt="photo" />
           </Box>
           {/* <div className="hour">
             <ul>
