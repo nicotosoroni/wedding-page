@@ -128,19 +128,59 @@ const Body = () => {
           <img className="decoImg" src={deco5} alt="photo" />
         </div>
         <Box
-          sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
           marginTop={5}
         >
-          <Typography
-            variant="h4"
-            component="h2"
-            paddingLeft={2}
-            sx={{
-              fontFamily: ' Comfortaa, cursive',
-            }}
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="4"
+              >
+                <path d="M37 21v16m-26 0v7h26v-7m-26 0H4V10l14-6h12l14 6v27h-7m-26 0V21M30 4l-6 14m0 0L18 4m6 14v26m6-40l-6 14m0 0L18 4" />
+                <path d="m18 4l-4 8l4 5.5l-2 5.5l8 14m6-33l5 8l-5 5.5l2 5.5l-8 14" />
+              </g>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M218.38 208.12c-.06-.12-.11-.25-.17-.37l-44.54-94.87L193 82.56c.06-.09.12-.18.17-.27a20 20 0 0 0 0-20.58c-.14-.24-.3-.48-.46-.71L172 31.44V12a12 12 0 0 0-24 0v19l-4.38 5.47a20 20 0 0 1-31.24 0L108 31V12a12 12 0 0 0-24 0v19.44L63.31 61c-.16.23-.32.47-.46.71a20 20 0 0 0 0 20.58c0 .09.11.18.17.27l19.31 30.32l-44.54 94.87c-.06.12-.11.25-.17.37A20 20 0 0 0 56 236h144a20 20 0 0 0 18.39-27.88ZM128 68a43.75 43.75 0 0 0 31.21-13l12 17.1l-17.79 27.9h-50.84L84.82 72.12l12-17.1A43.75 43.75 0 0 0 128 68ZM62.31 212l41.31-88h48.76l41.31 88Z"
+              />
+            </svg>
+          </Box>
+          <Box
+            className="clothes"
+            sx={{ display: 'flex', justifyContent: 'center' }}
           >
-            Vestimenta: Elegante Sport.
-          </Typography>
+            <Typography
+              variant="h4"
+              component="h2"
+              paddingLeft={2}
+              sx={{
+                fontFamily: ' Comfortaa, cursive',
+              }}
+            >
+              : Elegante Sport.
+            </Typography>
+          </Box>
         </Box>
         <hr />
         <CountDown />

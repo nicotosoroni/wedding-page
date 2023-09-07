@@ -66,4 +66,17 @@ export const StyledBody = styled.div`
       max-height: 90px;
     }
   }
+
+  .clothes h2 {
+    font-size: 50px;
+    @media (max-width: 900px) {
+      font-size: 50px;
+    }
+    @media (max-width: 700px) {
+      font-size: 50px;
+    }
+    @media (max-width: 500px) {
+      font-size: 25px;
+    }
+  }
 `;
