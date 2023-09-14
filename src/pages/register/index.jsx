@@ -99,20 +99,22 @@ const Register = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledRegister>
+          <Box className="decoImg" marginTop={2} marginBottom={2}>
+            <img src={deco4} alt="photo" />
+          </Box>
           <Typography
             variant="h5"
             component="h2"
             paddingTop={1}
             paddingLeft={3}
+            marginBottom={5}
             sx={{
               fontFamily: ' Comfortaa, cursive',
             }}
           >
-            Registrate como invitado
+            ¡Confirmanos tu asistencia!
           </Typography>
-          <Box className="decoImg" marginTop={2} marginBottom={2}>
-            <img src={deco4} alt="photo" />
-          </Box>
+
           <Typography
             variant="h6"
             component="h2"
@@ -121,8 +123,8 @@ const Register = () => {
               fontFamily: ' Comfortaa, cursive',
             }}
           >
-            A través de este formulario podés registrar los participantes al
-            casamiento:
+            Si ya decidiste que podes y te gustaría compartir con nosotros este
+            día tan especial, no te olvides de registrarte:
           </Typography>
           <FormularioContainer>
             {/* <h2>Formulario de Usuario</h2> */}

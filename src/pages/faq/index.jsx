@@ -1,4 +1,5 @@
 import Navbar from '../../components/navbar';
+import { Link } from 'react-router-dom';
 import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco6.png';
 import { FAQStyles } from './styles';
@@ -153,6 +154,9 @@ const Faq = () => {
                 }}
               >
                 Epic Hotel San Luis - La Punta.{' '}
+                <Link to="https://epichotelsanluis.com/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -165,6 +169,9 @@ const Faq = () => {
                 }}
               >
                 La Recova Hotel Spa - La Punta.{' '}
+                <Link to="http://larecovahotel.com.ar/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -177,6 +184,9 @@ const Faq = () => {
                 }}
               >
                 Balcones del Sol (Av. serrana y calle 5 norte) - La Punta.{' '}
+                <Link to="https://balconesdelsol.com.ar/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -189,6 +199,12 @@ const Faq = () => {
                 }}
               >
                 Boreas Apart Hotel (Av. serrana y calle 3 sur) - La Punta.{' '}
+                <Link
+                  to="http://boreas-apart.hotels-argentina.net/es/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -201,6 +217,12 @@ const Faq = () => {
                 }}
               >
                 Be Haus Temporary Apartments (Tomas Jofre 1551) - San Luis.{' '}
+                <Link
+                  to="https://www.instagram.com/be_haus/?igshid=MmU2YjMzNjRlOQ%3D%3D"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -213,6 +235,9 @@ const Faq = () => {
                 }}
               >
                 Visit Hotel y Apart (Av. illia 526) - San Luis.{' '}
+                <Link to="https://wp.visithotelapart.com.ar/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -225,6 +250,12 @@ const Faq = () => {
                 }}
               >
                 Hotel Premium Tower Suites (Av. illia 525) - San Luis.{' '}
+                <Link
+                  to="https://www.instagram.com/premiumtower.sanluis/?igshid=MmU2YjMzNjRlOQ%3D%3D"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -237,6 +268,12 @@ const Faq = () => {
                 }}
               >
                 Hotel Internacional Potrero de los Funes - Potrero de los Funes.{' '}
+                <Link
+                  to="http://www.hotelpotrero.sanluis.gov.ar/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
           </ul>

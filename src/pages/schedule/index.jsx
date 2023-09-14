@@ -4,14 +4,14 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco3.png';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 
 const Schedule = () => {
   return (
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
-        <Typography
+        {/* <Typography
           variant="h5"
           component="h2"
           paddingTop={1}
@@ -21,7 +21,7 @@ const Schedule = () => {
           }}
         >
           Cronograma
-        </Typography>
+        </Typography> */}
         <StyledSchedule>
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco4} alt="photo" />

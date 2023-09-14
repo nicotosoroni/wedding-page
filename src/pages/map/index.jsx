@@ -18,7 +18,7 @@ const MapPage = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledMap>
-          <Typography
+          {/* <Typography
             variant="h5"
             component="h2"
             paddingTop={1}
@@ -28,7 +28,7 @@ const MapPage = () => {
             }}
           >
             Mapa
-          </Typography>
+          </Typography> */}
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco4} alt="photo" />
           </Box>

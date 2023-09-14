@@ -56,6 +56,7 @@ const pages = [
   { name: 'Musica', url: '/pages/spotify' },
   { name: 'Registro', url: '/pages/register' },
   { name: 'Turismo', url: '/pages/turismo' },
+  { name: 'Regalo', url: '/pages/gift' },
   { name: 'Preguntas', url: '/pages/faq' },
 ];
 
@@ -102,6 +103,7 @@ function Navbar() {
             LOGO
           </Typography> */}
 
+            {/* Mobile */}
             <Box
               sx={{
                 flexGrow: 1,
@@ -174,6 +176,8 @@ function Navbar() {
           >
             LOG
           </Typography> */}
+
+            {/* Desktop */}
             <Box
               sx={{
                 flexGrow: 1,
@@ -186,12 +190,19 @@ function Navbar() {
                 <Button
                   key={page.name}
                   onClick={() => handleCloseNavMenu(page.url)}
-                  sx={{ my: 2, color: 'black', display: 'block' }}
+                  sx={{
+                    my: 2,
+                    color: 'black',
+                    display: 'block',
+                    paddingLeft: '6px',
+                    paddingRight: '6px',
+                  }}
                 >
                   <Typography
                     textAlign="center"
                     sx={{
                       fontFamily: 'Comfortaa',
+                      fontWeight: '700',
                     }}
                   >
                     {page.name}

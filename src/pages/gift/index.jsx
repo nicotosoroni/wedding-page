@@ -3,6 +3,7 @@ import { StyledGift } from './styles';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import deco4 from '../../assets/deco/deco4.png';
+import deco6 from '../../assets/deco/deco6.png';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -38,6 +39,7 @@ const Schedule = () => {
             <img src={deco4} alt="photo" />
           </div>
           <Box
+            margin={2}
             sx={{
               bgcolor: '#f4f0ef',
               fontFamily: ' Comfortaa, cursive',
@@ -47,7 +49,6 @@ const Schedule = () => {
               <CardContent>
                 <RedeemIcon />
                 <Typography
-                  marginTop={2}
                   marginBottom={2}
                   sx={{ fontSize: 14 }}
                   color="text.secondary"
@@ -68,6 +69,9 @@ const Schedule = () => {
               </CardContent>
             </Card>
           </Box>
+          <div className="decoImg">
+            <img src={deco6} alt="photo" />
+          </div>
         </StyledGift>
       </Box>
     </Container>

@@ -15,7 +15,7 @@ const Photos = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledPhotos>
-          <Typography
+          {/* <Typography
             variant="h5"
             component="h2"
             paddingTop={1}
@@ -25,35 +25,41 @@ const Photos = () => {
             }}
           >
             Fotos
-          </Typography>
+          </Typography> */}
           <div className="decoImg">
             <img src={deco4} alt="photo" />
           </div>
-          <Typography
-            variant="h6"
-            component="h2"
-            margin={2}
-            sx={{
-              fontFamily: ' Comfortaa, cursive',
-            }}
-          >
-            Acá podes subir y compartir las fotos que saques:
-          </Typography>
-
+          <Box>
+            <Typography
+              width={'75%'}
+              variant="h6"
+              component="h2"
+              margin={2}
+              sx={{
+                fontFamily: ' Comfortaa, cursive',
+              }}
+            >
+              Haz click en el siguiente icono para subir y compartir con todos
+              los invitados, las fotos que tomes de la boda. :
+            </Typography>
+          </Box>
           {/* <div>
             <img src={img} width={500} height={500} alt="foto" />
           </div> */}
-          <Link
-            to="https://drive.google.com/drive/folders/1fPLIGFkw4kq6nUXk0p4M49lI2iJOtuhV"
-            target="_blank"
-          >
-            <Box
-              padding={10}
-              sx={{ display: 'flex', justifyContent: 'center' }}
+          <Box display={'flex'} alignItems={'center'} justifyContent={'center'}>
+            <Link
+              to="https://drive.google.com/drive/folders/1fPLIGFkw4kq6nUXk0p4M49lI2iJOtuhV"
+              target="_blank"
             >
-              <CameraAltOutlinedIcon />
-            </Box>
-          </Link>
+              <Box
+                width={'100px'}
+                padding={5}
+                sx={{ display: 'flex', justifyContent: 'center' }}
+              >
+                <CameraAltOutlinedIcon />
+              </Box>
+            </Link>
+          </Box>
           <div className="decoImg">
             <img src={deco5} alt="photo" />
           </div>

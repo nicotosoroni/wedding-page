@@ -1,12 +1,13 @@
 import CountDown from '../countdown';
+import { Link } from 'react-router-dom';
 import deco1 from '../../assets/deco/deco1.png';
 import deco2 from '../../assets/deco/deco2.png';
 import deco3 from '../../assets/deco/deco3.png';
 import deco4 from '../../assets/deco/deco4.png';
 import deco5 from '../../assets/deco/deco5.png';
-import deco6 from '../../assets/deco/deco6.png';
-import { useNavigate } from 'react-router-dom';
-import { StyledBody, Button } from './styles';
+// import deco6 from '../../assets/deco/deco6.png';
+// import { useNavigate } from 'react-router-dom';
+import { StyledBody } from './styles';
 import Navbar from '../navbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
@@ -14,10 +15,10 @@ import Box from '@mui/material/Box';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Body = () => {
-  const navigate = useNavigate();
-  const viewGift = () => {
-    navigate('/pages/gift');
-  };
+  // const navigate = useNavigate();
+  // const viewGift = () => {
+  //   navigate('/pages/gift');
+  // };
   return (
     <Container maxWidth={false} disableGutters>
       <StyledBody>
@@ -58,23 +59,24 @@ const Body = () => {
           }}
         >
           <Typography
-            variant="h5"
+            variant="h2"
             component="h2"
             sx={{
               fontFamily: ' Comfortaa, cursive',
-            }}
-          >
-            Viernes - 18:30 hs.
-          </Typography>
-          <Typography
-            variant="h4"
-            component="h2"
-            marginTop={2}
-            sx={{
-              fontFamily: ' Comfortaa, cursive',
+              fontSize: { xs: '2.65rem', md: '3.75rem' },
             }}
           >
             08 | 12 | 2023
+          </Typography>
+          <Typography
+            variant="h4"
+            marginTop={2}
+            sx={{
+              fontFamily: ' Comfortaa, cursive',
+              fontSize: { xs: '1.625rem', md: '2.125rem' },
+            }}
+          >
+            Viernes - 18:30 hs.
           </Typography>
         </Box>
         <hr />
@@ -119,16 +121,21 @@ const Body = () => {
           margin={4}
         >
           <InstagramIcon />
-          <Typography
-            variant="h4"
-            component="h2"
-            paddingLeft={2}
-            sx={{
-              fontFamily: ' Comfortaa, cursive',
-            }}
+          <Link
+            to="https://www.instagram.com/explore/tags/apple/"
+            target="_blank"
           >
-            #micaymauri
-          </Typography>
+            <Typography
+              variant="h4"
+              component="h2"
+              paddingLeft={2}
+              sx={{
+                fontFamily: ' Comfortaa, cursive',
+              }}
+            >
+              #micaymauri
+            </Typography>
+          </Link>
         </Box>
         <div>
           <img className="decoImg" src={deco4} alt="photo" />
@@ -194,8 +201,10 @@ const Body = () => {
           <img className="decoImg" src={deco5} alt="photo" />
         </div>
         <hr />
-        <CountDown />
-        <hr />
+        <Box marginBottom={3}>
+          <CountDown />
+        </Box>
+        {/* <hr />
         <div>
           <img className="decoImg" src={deco4} alt="photo" />
         </div>
@@ -211,7 +220,7 @@ const Body = () => {
         </Box>
         <div>
           <img className="decoImg" src={deco6} alt="photo" />
-        </div>
+        </div> */}
       </StyledBody>
     </Container>
   );
