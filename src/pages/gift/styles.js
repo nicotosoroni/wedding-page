@@ -5,7 +5,7 @@ export const StyledGift = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  img {
+  .decoImg img {
     max-height: 90px;
     width: auto;
     height: auto;
@@ -20,5 +20,15 @@ export const StyledGift = styled.div`
   }
   .activity li {
     padding-inline-start: 5px;
+  }
+  .fondoImg {
+    position: fixed;
+    bottom: 0;
+    & img {
+      width: 70%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
   }
 `;

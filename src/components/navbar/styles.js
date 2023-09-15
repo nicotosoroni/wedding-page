@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const NavbarStyles = styled.div`
+  z-index: 10;
   /*
   margin: 15px auto;
-  z-index: 10;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

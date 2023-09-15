@@ -7,6 +7,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import deco3 from '../../assets/deco/deco3.png';
 import deco4 from '../../assets/deco/deco4.png';
+import fondo7 from '../../assets/deco/fondo7.png';
+import fondo8 from '../../assets/deco/fondo8.png';
 // import { doc, collection, getDoc, getDocs, getFirestore, addDoc } from 'firebase/firestore';
 import { collection, getDocs, getFirestore, addDoc } from 'firebase/firestore';
 import {
@@ -99,6 +101,9 @@ const Register = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledRegister>
+          <Box className="esquinaSup">
+            <img src={fondo7} alt="photo" />
+          </Box>
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco4} alt="photo" />
           </Box>
@@ -231,6 +236,9 @@ const Register = () => {
           )}
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco3} alt="photo" />
+          </Box>
+          <Box className="esquinaInf" marginTop={2}>
+            <img src={fondo8} alt="photo" />
           </Box>
         </StyledRegister>
       </Box>

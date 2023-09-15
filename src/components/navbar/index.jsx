@@ -80,6 +80,8 @@ function Navbar() {
         style={{
           background: 'transparent',
           boxShadow: 'none',
+          position: 'relative',
+          zIndex: '10',
         }}
       >
         <Container maxWidth="xl">

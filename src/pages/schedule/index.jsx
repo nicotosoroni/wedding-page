@@ -4,6 +4,8 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco3.png';
+import fondo4 from '../../assets/deco/fondo4.png';
+import Typography from '@mui/material/Typography';
 // import Typography from '@mui/material/Typography';
 
 const Schedule = () => {
@@ -23,7 +25,7 @@ const Schedule = () => {
           Cronograma
         </Typography> */}
         <StyledSchedule>
-          <Box className="decoImg" marginTop={2} marginBottom={2}>
+          <Box className="decoImg" marginTop={20} marginBottom={5}>
             <img src={deco4} alt="photo" />
           </Box>
           <Box
@@ -32,9 +34,19 @@ const Schedule = () => {
               fontFamily: ' Comfortaa, cursive',
             }}
           >
-            Próximamente
+            <Typography
+              width={'75%'}
+              variant="h4"
+              component="h2"
+              margin={2}
+              sx={{
+                fontFamily: ' Comfortaa, cursive',
+              }}
+            >
+              Próximamente
+            </Typography>
           </Box>
-          <Box className="decoImg" marginTop={2} marginBottom={2}>
+          <Box className="decoImg" marginTop={4} marginBottom={5}>
             <img src={deco6} alt="photo" />
           </Box>
           {/* <div className="hour">
@@ -111,6 +123,15 @@ const Schedule = () => {
               </li>
             </ul>
           </div> */}
+          <Box
+            className="fondoImg"
+            marginTop={2}
+            display={'flex'}
+            alignItems={'center'}
+            justifyContent={'center'}
+          >
+            <img src={fondo4} alt="photo" />
+          </Box>
         </StyledSchedule>
       </Box>
     </Container>

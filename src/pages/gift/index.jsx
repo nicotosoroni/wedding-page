@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import RedeemIcon from '@mui/icons-material/Redeem';
+import fondo4 from '../../assets/deco/fondo4.png';
 
 const bull = (
   <Box
@@ -49,21 +50,31 @@ const Schedule = () => {
               <CardContent>
                 <RedeemIcon />
                 <Typography
+                  marginTop={2}
                   marginBottom={2}
-                  sx={{ fontSize: 14 }}
+                  sx={{ fontSize: 14, textAlign: 'center' }}
                   color="text.secondary"
                   gutterBottom
                 >
-                  Banco: Nombre del banco
+                  <b>Nro. de cuenta:</b> 4069206-9 144-1
                 </Typography>
                 <hr />
-                <Typography variant="body2" marginTop={2} marginBottom={2}>
-                  CBU: 0000000000000000000000000
+                <Typography
+                  variant="body2"
+                  marginTop={2}
+                  marginBottom={2}
+                  sx={{ textAlign: 'center' }}
+                >
+                  <b>CBU:</b> 0070144630004069206918
                   <br />
-                  Alias: alias.alias.alias
+                  {/* Alias: alias.alias.alias */}
                 </Typography>
                 <hr />
-                <Typography variant="h5" component="div">
+                <Typography
+                  variant="h5"
+                  component="div"
+                  sx={{ textAlign: 'center' }}
+                >
                   {bull}¡Muchas gracias!{bull}
                 </Typography>
               </CardContent>
@@ -72,6 +83,15 @@ const Schedule = () => {
           <div className="decoImg">
             <img src={deco6} alt="photo" />
           </div>
+          <Box
+            className="fondoImg"
+            marginTop={2}
+            display={'flex'}
+            alignItems={'center'}
+            justifyContent={'center'}
+          >
+            <img src={fondo4} alt="photo" />
+          </Box>
         </StyledGift>
       </Box>
     </Container>

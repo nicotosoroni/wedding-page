@@ -6,7 +6,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { StyledPhotos } from './styles';
 import deco4 from '../../assets/deco/deco4.png';
-import deco5 from '../../assets/deco/deco5.png';
+// import deco5 from '../../assets/deco/deco5.png';
+import fondo4 from '../../assets/deco/fondo4.png';
+import fondo7 from '../../assets/deco/fondo7.png';
+import fondo8 from '../../assets/deco/fondo8.png';
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 
 const Photos = () => {
@@ -15,6 +18,9 @@ const Photos = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledPhotos>
+          <Box className="esquinaSup">
+            <img src={fondo7} alt="photo" />
+          </Box>
           {/* <Typography
             variant="h5"
             component="h2"
@@ -26,9 +32,9 @@ const Photos = () => {
           >
             Fotos
           </Typography> */}
-          <div className="decoImg">
+          <Box className="decoImg" marginTop={2} marginBottom={5}>
             <img src={deco4} alt="photo" />
-          </div>
+          </Box>
           <Box>
             <Typography
               width={'75%'}
@@ -60,9 +66,21 @@ const Photos = () => {
               </Box>
             </Link>
           </Box>
-          <div className="decoImg">
+          {/* <div className="decoImg">
             <img src={deco5} alt="photo" />
-          </div>
+          </div> */}
+          <Box
+            className="fondoImg"
+            marginTop={2}
+            display={'flex'}
+            alignItems={'center'}
+            justifyContent={'center'}
+          >
+            <img src={fondo4} alt="photo" />
+          </Box>
+          <Box className="esquinaInf" marginTop={2}>
+            <img src={fondo8} alt="photo" />
+          </Box>
         </StyledPhotos>
       </Box>
     </Container>

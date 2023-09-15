@@ -13,6 +13,38 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import useSound from 'use-sound';
+import boopSfx from '../../assets/music.mp3';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import StopIcon from '@mui/icons-material/Stop';
+import Button from '@mui/material/Button';
+
+const BoopButton = () => {
+  const [play, { stop }] = useSound(boopSfx);
+
+  return (
+    <Box
+      className="music"
+      sx={{
+        position: 'fixed',
+        top: { xs: '', md: '10px' },
+        right: '10px',
+        backgroundColor: 'rgb(193 188 140)',
+        borderRadius: { xs: '9px', md: '18px' },
+        opacity: '0.6',
+        width: { xs: '36px', md: '128px' },
+        bottom: { xs: '10px', md: 'auto' },
+      }}
+    >
+      <Button onClick={play} color="inherit">
+        <PlayArrowIcon />
+      </Button>
+      <Button onClick={() => stop()} color="inherit">
+        <StopIcon />
+      </Button>
+    </Box>
+  );
+};
 
 const Body = () => {
   // const navigate = useNavigate();
@@ -23,6 +55,7 @@ const Body = () => {
     <Container maxWidth={false} disableGutters>
       <StyledBody>
         <Navbar />
+        <BoopButton />
         <div className="titleImg">
           <img className="decoImg" src={deco1} alt="photo" />
         </div>
@@ -122,7 +155,7 @@ const Body = () => {
         >
           <InstagramIcon />
           <Link
-            to="https://www.instagram.com/explore/tags/apple/"
+            to="https://www.instagram.com/explore/tags/micaymauri/"
             target="_blank"
           >
             <Typography
@@ -204,6 +237,7 @@ const Body = () => {
         <Box marginBottom={3}>
           <CountDown />
         </Box>
+
         {/* <hr />
         <div>
           <img className="decoImg" src={deco4} alt="photo" />

@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco6.png';
+import { Link } from 'react-router-dom';
 import { StyledMap } from './styles';
 
 const TourPage = () => {
@@ -24,6 +25,7 @@ const TourPage = () => {
             paddingLeft={3}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '700',
             }}
           >
             ¿Qué visitar en San Luis?
@@ -37,9 +39,10 @@ const TourPage = () => {
             margin={2}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '700',
             }}
           >
-            LOS IMPERDIBLES
+            LOS IMPERDIBLES !!!
           </Typography>
           <ul>
             <li>
@@ -51,7 +54,10 @@ const TourPage = () => {
                   fontFamily: ' Comfortaa, cursive',
                 }}
               >
-                Pueblo de “La Carolina” – Minas de Oro - Gruta de “Inti Huasi”.
+                Pueblo de “La Carolina” – Minas de Oro - Gruta de “Inti Huasi”.{' '}
+                <Link to="https://lacarolinasanluis.com.ar/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -63,7 +69,13 @@ const TourPage = () => {
                   fontFamily: ' Comfortaa, cursive',
                 }}
               >
-                Parque Nacional Sierra de las Quijadas.
+                Parque Nacional Sierra de las Quijadas.{' '}
+                <Link
+                  to="https://www.argentina.gob.ar/parquesnacionales/sierradelasquijadas"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -75,7 +87,13 @@ const TourPage = () => {
                   fontFamily: ' Comfortaa, cursive',
                 }}
               >
-                Estancia Grande
+                Estancia Grande{' '}
+                <Link
+                  to="https://www.instagram.com/estanciagrandesl/?hl=es"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -164,6 +182,7 @@ const TourPage = () => {
             margin={2}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '700',
             }}
           >
             LUGARES PARA CONOCER
@@ -379,6 +398,7 @@ const TourPage = () => {
             margin={2}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '700',
             }}
           >
             ¿Dónde comer? :

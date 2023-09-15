@@ -21,4 +21,38 @@ export const StyledPhotos = styled.div`
     box-shadow: rgb(35 75 41 / 30%) 0px 0px 10px,
       rgb(30 81 18 / 83%) 0px 0px 40px, rgb(103 99 44) 0px 0px 80px;
   }
+  .fondoImg {
+    position: fixed;
+    bottom: 0;
+    & img {
+      width: 70%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+  .esquinaSup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    & img {
+      height: 450px;
+      @media (max-width: 500px) {
+        width: 145px;
+        height: auto;
+      }
+    }
+  }
+  .esquinaInf {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    & img {
+      height: 450px;
+      @media (max-width: 500px) {
+        width: 145px;
+        height: auto;
+      }
+    }
+  }
 `;

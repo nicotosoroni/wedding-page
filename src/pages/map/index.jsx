@@ -6,6 +6,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco6.png';
+import fondo5 from '../../assets/deco/fondo5.png';
+import fondo6 from '../../assets/deco/fondo6.png';
 import { StyledMap } from './styles';
 
 const MapPage = () => {
@@ -18,6 +20,9 @@ const MapPage = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledMap>
+          <Box className="esquinaSup">
+            <img src={fondo5} alt="photo" />
+          </Box>
           {/* <Typography
             variant="h5"
             component="h2"
@@ -64,6 +69,9 @@ const MapPage = () => {
           <div className="decoImg">
             <img src={deco6} alt="photo" />
           </div>
+          <Box className="esquinaInf" marginTop={2}>
+            <img src={fondo6} alt="photo" />
+          </Box>
         </StyledMap>
       </Box>
     </Container>

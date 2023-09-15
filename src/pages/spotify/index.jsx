@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import { StyledMusic } from './styles';
 import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco6.png';
+import fondo5 from '../../assets/deco/fondo5.png';
+import fondo6 from '../../assets/deco/fondo6.png';
 // import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 
 const Spotify = () => {
@@ -16,6 +18,9 @@ const Spotify = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledMusic>
+          <Box className="esquinaSup">
+            <img src={fondo5} alt="photo" />
+          </Box>
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco4} alt="photo" />
           </Box>
@@ -82,6 +87,9 @@ const Spotify = () => {
           </Box>
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco6} alt="photo" />
+          </Box>
+          <Box className="esquinaInf" marginTop={2}>
+            <img src={fondo6} alt="photo" />
           </Box>
         </StyledMusic>
       </Box>

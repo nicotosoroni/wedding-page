@@ -79,6 +79,18 @@ export const StyledBody = styled.div`
       font-size: 25px;
     }
   }
+  .music {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+    & button {
+      padding: 6px 0;
+    }
+  }
 `;
 
 export const Button = styled.button`
