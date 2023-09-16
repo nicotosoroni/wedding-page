@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import CountDown from '../countdown';
 import { Link } from 'react-router-dom';
 import deco1 from '../../assets/deco/deco1.png';
@@ -19,8 +20,11 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import StopIcon from '@mui/icons-material/Stop';
 import Button from '@mui/material/Button';
 
-const BoopButton = () => {
+export const BoopButton = () => {
   const [play, { stop }] = useSound(boopSfx);
+  const useMountEffect = (fun) => useEffect(fun, []);
+
+  useMountEffect(play);
 
   return (
     <Box

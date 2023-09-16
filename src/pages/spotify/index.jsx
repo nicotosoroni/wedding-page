@@ -18,7 +18,10 @@ const Spotify = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledMusic>
-          <Box className="esquinaSup">
+          <Box
+            className="esquinaSup"
+            sx={{ display: { xs: 'none', md: 'block' } }}
+          >
             <img src={fondo5} alt="photo" />
           </Box>
           <Box className="decoImg" marginTop={2} marginBottom={2}>
@@ -88,7 +91,11 @@ const Spotify = () => {
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco6} alt="photo" />
           </Box>
-          <Box className="esquinaInf" marginTop={2}>
+          <Box
+            className="esquinaInf"
+            marginTop={2}
+            sx={{ display: { xs: 'none', md: 'block' } }}
+          >
             <img src={fondo6} alt="photo" />
           </Box>
         </StyledMusic>

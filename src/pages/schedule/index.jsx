@@ -7,12 +7,14 @@ import deco6 from '../../assets/deco/deco3.png';
 import fondo4 from '../../assets/deco/fondo4.png';
 import Typography from '@mui/material/Typography';
 // import Typography from '@mui/material/Typography';
+import { BoopButton } from '../../components/body';
 
 const Schedule = () => {
   return (
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <BoopButton />
         {/* <Typography
           variant="h5"
           component="h2"

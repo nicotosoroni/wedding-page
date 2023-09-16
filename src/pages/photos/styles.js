@@ -4,6 +4,19 @@ export const StyledPhotos = styled.div`
   .decoImg {
     display: flex;
     justify-content: center;
+
+    img {
+      max-height: 90px;
+      width: auto;
+      height: auto;
+    }
+  }
+  .decoImg2 {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 500px) {
+      display: none;
+    }
     img {
       max-height: 90px;
       width: auto;
@@ -25,7 +38,7 @@ export const StyledPhotos = styled.div`
     position: fixed;
     bottom: 0;
     & img {
-      width: 70%;
+      width: 50%;
       @media (max-width: 500px) {
         width: 100%;
       }
@@ -36,7 +49,7 @@ export const StyledPhotos = styled.div`
     top: 0;
     left: 0;
     & img {
-      height: 450px;
+      height: 360px;
       @media (max-width: 500px) {
         width: 145px;
         height: auto;
@@ -48,7 +61,7 @@ export const StyledPhotos = styled.div`
     bottom: 0;
     right: 0;
     & img {
-      height: 450px;
+      height: 360px;
       @media (max-width: 500px) {
         width: 145px;
         height: auto;

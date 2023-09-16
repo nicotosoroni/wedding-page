@@ -107,6 +107,12 @@ const TourPage = () => {
               >
                 Dique Potrero de los Funes - Hotel Potrero de Funes - Bar
                 Flotante (Tearoom).
+                <Link
+                  to="https://www.turismoenpotrerodelosfunes.com/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -119,6 +125,12 @@ const TourPage = () => {
                 }}
               >
                 Dique La Florida – Camping Universidad Nacional.
+                <Link
+                  to="https://visitarsanluis.com/blog/post/dique-la-florida"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -131,6 +143,12 @@ const TourPage = () => {
                 }}
               >
                 Rio El Trapiche.
+                <Link
+                  to="https://eltrapichesanluis.com.ar/eltrapiche/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -144,6 +162,12 @@ const TourPage = () => {
               >
                 Replica del Cabildo - Pirámide de Mayo - Casita de Tucuman y
                 Recova.
+                <Link
+                  to="https://www.facebook.com/cabildoensanluis"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -157,6 +181,12 @@ const TourPage = () => {
               >
                 Mirador “Hito del Bicentenario” – Terrazas del Portezuelo - San
                 Luis.
+                <Link
+                  to="https://culturasanluis.com/mirador-hito-del-bicentenario/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -169,6 +199,12 @@ const TourPage = () => {
                 }}
               >
                 Hospital “Ramon Carrillo” – San Luis.
+                <Link
+                  to="https://hospitalramoncarrillo.sanluis.gov.ar/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
           </ul>
@@ -265,6 +301,12 @@ const TourPage = () => {
                 }}
               >
                 Trekking al “Cerro Sololosta”.
+                <Link
+                  to="https://visitarsanluis.com/blog/post/cerro-sololosta-una-visita-al-pasado"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -277,6 +319,12 @@ const TourPage = () => {
                 }}
               >
                 Trekking al `Cerro de la Cruz`.
+                <Link
+                  to="https://visitarsanluis.com/blog/post/cerro-de-la-cruz-inicia-en-el-trekking-en-este-cerro"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -289,6 +337,12 @@ const TourPage = () => {
                 }}
               >
                 Valle de Pancanta.
+                <Link
+                  to="https://visitarsanluis.com/blog/post/valle-del-pancanta"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -301,6 +355,9 @@ const TourPage = () => {
                 }}
               >
                 Parque de tirolesas “ArVolar” – Juana Koslay.
+                <Link to="https://www.parquearvolar.com.ar/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -313,6 +370,12 @@ const TourPage = () => {
                 }}
               >
                 Puente Colgante – La Florida.
+                <Link
+                  to="https://es.wikiloc.com/rutas-senderismo/puente-peatonal-colgante-la-florida-balde-de-la-isla-la-florida-san-luis-club-andino-san-luis-51881426"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -325,6 +388,12 @@ const TourPage = () => {
                 }}
               >
                 Salinas del Bebedero - Balde.
+                <Link
+                  to="https://viapais.com.ar/san-luis/el-desierto-blanco-de-san-luis-que-muy-pocos-conocen-y-que-te-va-a-enamorar/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -337,6 +406,12 @@ const TourPage = () => {
                 }}
               >
                 Monumento al Pueblo Puntano – Juana Koslay.
+                <Link
+                  to="https://culturasanluis.com/monumento-al-pueblo-puntano/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -349,6 +424,12 @@ const TourPage = () => {
                 }}
               >
                 Iglesia Catedral San Luis – Plaza Pringles
+                <Link
+                  to="https://sanluislaciudad.gob.ar/turismo-cultura-deportes/casco-viejo/catedral-san-luis/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -361,6 +442,12 @@ const TourPage = () => {
                 }}
               >
                 Monasterio de las Monjas Benedictinas.
+                <Link
+                  to="https://visitarsanluis.com/blog/post/monasterio-nuestra-senora-de-la-fidelidad-san-luis"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -373,6 +460,12 @@ const TourPage = () => {
                 }}
               >
                 Villa de la Quebrada.
+                <Link
+                  to="https://visitarsanluis.com/localidad/villa-de-la-quebrada"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -385,6 +478,9 @@ const TourPage = () => {
                 }}
               >
                 Parque Astronómico – La Punta.
+                <Link to="http://palp.edu.ar/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
           </ul>
@@ -414,6 +510,12 @@ const TourPage = () => {
                 }}
               >
                 Parrilla “Las Golondrinas” – Potrero de los Funes.{' '}
+                <Link
+                  to="https://www.tripadvisor.com.ar/Restaurant_Review-g2052513-d3136639-Reviews-Parrilla_Las_Golondrinas-Potrero_de_los_Funes_Province_of_San_Luis_Cuyo.html"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -426,18 +528,12 @@ const TourPage = () => {
                 }}
               >
                 Casa de Té “Lunamakena“- Potrero de los Funes.{' '}
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                variant="subtitle1"
-                component="h2"
-                margin={2}
-                sx={{
-                  fontFamily: ' Comfortaa, cursive',
-                }}
-              >
-                Cervecería “El Malón” - Potrero de los Funes.{' '}
+                <Link
+                  to="https://www.instagram.com/lunamakena_resto/?hl=es-la"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -450,6 +546,12 @@ const TourPage = () => {
                 }}
               >
                 Tearoom- Bar Flotante - Potrero de los Funes.{' '}
+                <Link
+                  to="https://www.tripadvisor.com.ar/Restaurant_Review-g312788-d1983488-Reviews-Floating_Tearoom_at_Hotel_Potrero_de_los_Funes-San_Luis_Province_of_San_Luis_Cuyo.html"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -462,6 +564,9 @@ const TourPage = () => {
                 }}
               >
                 Estancia “EL AMPARO” - Estancia Grande. Reserva previa.{' '}
+                <Link to="http://www.elamparo1850.com/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -474,6 +579,12 @@ const TourPage = () => {
                 }}
               >
                 Casa de Té “Casa Suiza”- Estancia Grande.{' '}
+                <Link
+                  to="https://www.instagram.com/casa.suiza/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -486,6 +597,12 @@ const TourPage = () => {
                 }}
               >
                 La Pulpería del Negro - Estancia Grande{' '}
+                <Link
+                  to="https://www.instagram.com/pulperiadelnegroestanciagrande/?hl=es"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -498,6 +615,12 @@ const TourPage = () => {
                 }}
               >
                 El “Bodegón de Oro” - La Carolina. Reserva previa.{' '}
+                <Link
+                  to="https://www.instagram.com/elbodegondeoro/?hl=es"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -510,6 +633,9 @@ const TourPage = () => {
                 }}
               >
                 Restaurant “Los Robles” - San Luis.{' '}
+                <Link to="https://www.losroblesresto.com.ar/" target="_blank">
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -522,6 +648,12 @@ const TourPage = () => {
                 }}
               >
                 “Estación B Café” - desayunos y meriendas - San Luis.{' '}
+                <Link
+                  to="https://www.instagram.com/estacionbcafe/?hl=es"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -534,6 +666,12 @@ const TourPage = () => {
                 }}
               >
                 ll Nonno - pastas- San Luis.{' '}
+                <Link
+                  to="https://www.facebook.com/IINonnoPastas/?locale=es_LA"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -546,6 +684,12 @@ const TourPage = () => {
                 }}
               >
                 La Tavola - San Luis.{' '}
+                <Link
+                  to="https://www.instagram.com/latavola_sl/?hl=es-la"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -558,6 +702,12 @@ const TourPage = () => {
                 }}
               >
                 Cactus - taquería- San Luis.{' '}
+                <Link
+                  to="https://www.instagram.com/cactus_restobar_sanluis?fbclid=IwAR1i79cvaqQnfXQhu04Jjj-Nr6HBKdjrFr_DgspcdmNFiTv7GdgGYt0NvGE"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -570,6 +720,12 @@ const TourPage = () => {
                 }}
               >
                 Un tal René - cervecería - San Luis{' '}
+                <Link
+                  to="https://www.instagram.com/untalrenesanluisciudad/"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -582,6 +738,12 @@ const TourPage = () => {
                 }}
               >
                 Bonjour - Meriendas y desayunos - San Luis{' '}
+                <Link
+                  to="https://www.instagram.com/bonjourcafebistro_/?hl=es-la"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
             <li>
@@ -593,19 +755,13 @@ const TourPage = () => {
                   fontFamily: ' Comfortaa, cursive',
                 }}
               >
-                Bonjour Café Bistro Centro - desayunos y meriendas - San Luis.{' '}
-              </Typography>
-            </li>
-            <li>
-              <Typography
-                variant="subtitle1"
-                component="h2"
-                margin={2}
-                sx={{
-                  fontFamily: ' Comfortaa, cursive',
-                }}
-              >
-                “El Nativo” - La Florida.{' '}
+                ”El Nativo” - La Florida.{' '}
+                <Link
+                  to="https://www.instagram.com/nativosanluis/?hl=es"
+                  target="_blank"
+                >
+                  Link a la web
+                </Link>
               </Typography>
             </li>
           </ul>

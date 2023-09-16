@@ -1,5 +1,5 @@
 import Navbar from '../../components/navbar';
-import { StyledGift } from './styles';
+import { StyledGift, Button } from './styles';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import deco4 from '../../assets/deco/deco4.png';
@@ -24,7 +24,7 @@ const Schedule = () => {
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
-        <Typography
+        {/* <Typography
           variant="h5"
           component="h2"
           paddingTop={1}
@@ -34,11 +34,11 @@ const Schedule = () => {
           }}
         >
           Depositar los regalos aquí
-        </Typography>
+        </Typography> */}
         <StyledGift>
-          <div className="decoImg">
+          <Box className="decoImg" marginTop={4} marginBottom={2}>
             <img src={deco4} alt="photo" />
-          </div>
+          </Box>
           <Box
             margin={2}
             sx={{
@@ -67,6 +67,13 @@ const Schedule = () => {
                 >
                   <b>CBU:</b> 0070144630004069206918
                   <br />
+                  <Button
+                    onClick={() => {
+                      navigator.clipboard.writeText('0070144630004069206918');
+                    }}
+                  >
+                    Copiar CBU
+                  </Button>
                   {/* Alias: alias.alias.alias */}
                 </Typography>
                 <hr />
@@ -80,9 +87,9 @@ const Schedule = () => {
               </CardContent>
             </Card>
           </Box>
-          <div className="decoImg">
+          <Box className="decoImg" marginTop={2} marginBottom={4}>
             <img src={deco6} alt="photo" />
-          </div>
+          </Box>
           <Box
             className="fondoImg"
             marginTop={2}

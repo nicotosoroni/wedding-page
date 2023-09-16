@@ -20,7 +20,10 @@ const MapPage = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledMap>
-          <Box className="esquinaSup">
+          <Box
+            className="esquinaSup"
+            sx={{ display: { xs: 'none', md: 'block' } }}
+          >
             <img src={fondo5} alt="photo" />
           </Box>
           {/* <Typography
@@ -58,6 +61,7 @@ const MapPage = () => {
             <Map />
           </Box>
           <Box
+            className="mapa"
             marginBottom={5}
             marginTop={5}
             sx={{
@@ -69,7 +73,11 @@ const MapPage = () => {
           <div className="decoImg">
             <img src={deco6} alt="photo" />
           </div>
-          <Box className="esquinaInf" marginTop={2}>
+          <Box
+            className="esquinaInf"
+            marginTop={2}
+            sx={{ display: { xs: 'none', md: 'block' } }}
+          >
             <img src={fondo6} alt="photo" />
           </Box>
         </StyledMap>

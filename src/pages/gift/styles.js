@@ -32,3 +32,14 @@ export const StyledGift = styled.div`
     }
   }
 `;
+
+export const Button = styled.button`
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(193 188 140);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+`;

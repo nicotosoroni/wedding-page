@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { StyledPhotos } from './styles';
 import deco4 from '../../assets/deco/deco4.png';
-// import deco5 from '../../assets/deco/deco5.png';
+import deco5 from '../../assets/deco/deco5.png';
 import fondo4 from '../../assets/deco/fondo4.png';
 import fondo7 from '../../assets/deco/fondo7.png';
 import fondo8 from '../../assets/deco/fondo8.png';
@@ -18,7 +18,10 @@ const Photos = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
         <StyledPhotos>
-          <Box className="esquinaSup">
+          <Box
+            className="esquinaSup"
+            sx={{ display: { xs: 'none', md: 'block' } }}
+          >
             <img src={fondo7} alt="photo" />
           </Box>
           {/* <Typography
@@ -32,7 +35,7 @@ const Photos = () => {
           >
             Fotos
           </Typography> */}
-          <Box className="decoImg" marginTop={2} marginBottom={5}>
+          <Box className="decoImg" marginTop={4} marginBottom={5}>
             <img src={deco4} alt="photo" />
           </Box>
           <Box>
@@ -66,6 +69,9 @@ const Photos = () => {
               </Box>
             </Link>
           </Box>
+          <Box className="decoImg2" marginTop={4} marginBottom={5}>
+            <img src={deco5} alt="photo" />
+          </Box>
           {/* <div className="decoImg">
             <img src={deco5} alt="photo" />
           </div> */}
@@ -78,7 +84,11 @@ const Photos = () => {
           >
             <img src={fondo4} alt="photo" />
           </Box>
-          <Box className="esquinaInf" marginTop={2}>
+          <Box
+            className="esquinaInf"
+            marginTop={2}
+            sx={{ display: { xs: 'none', md: 'block' } }}
+          >
             <img src={fondo8} alt="photo" />
           </Box>
         </StyledPhotos>
