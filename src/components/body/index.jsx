@@ -170,7 +170,7 @@ const Body = () => {
                 fontFamily: ' Comfortaa, cursive',
               }}
             >
-              #micaymauri
+              #mauriymica
             </Typography>
           </Link>
         </Box>
