@@ -19,7 +19,7 @@ const MusicPlayer = () => {
           backgroundColor: 'rgb(193 188 140)',
           borderRadius: { xs: '9px', md: '18px' },
           opacity: '0.6',
-          width: { xs: '36px', md: '128px' },
+          // width: { xs: '36px', md: '128px' },
           bottom: { xs: '10px', md: 'auto' },
         }}
       >

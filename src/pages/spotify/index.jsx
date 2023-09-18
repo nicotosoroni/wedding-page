@@ -60,10 +60,7 @@ const Spotify = () => {
             <img src={img} width={500} height={500} alt="foto" />
           </div> */}
           <Box display={'flex'} alignItems={'center'} justifyContent={'center'}>
-            <Link
-              to="https://open.spotify.com/playlist/7rwC8sH6YeyfzB8qwuJEny?si=fa0f10c449ff4b65&pt=012b7ae15cb3e5760143dd25bdc6ceff "
-              target="_blank"
-            >
+            <Link to="https://spotify.link/si3k9ViccDb" target="_blank">
               <Box
                 width={'100px'}
                 padding={5}
