@@ -9,6 +9,7 @@ import deco6 from '../../assets/deco/deco6.png';
 import fondo5 from '../../assets/deco/fondo5.png';
 import fondo6 from '../../assets/deco/fondo6.png';
 import { StyledMap } from './styles';
+import MusicPlayer from '../../components/MusicContext/MusicPlayer';
 
 const MapPage = () => {
   const { isLoaded } = useLoadScript({
@@ -19,6 +20,7 @@ const MapPage = () => {
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <MusicPlayer />
         <StyledMap>
           <Box
             className="esquinaSup"

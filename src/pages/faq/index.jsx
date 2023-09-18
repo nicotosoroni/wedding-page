@@ -6,12 +6,14 @@ import { FAQStyles } from './styles';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import MusicPlayer from '../../components/MusicContext/MusicPlayer';
 
 const Faq = () => {
   return (
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <MusicPlayer />
         <FAQStyles>
           <Typography
             variant="h5"
@@ -20,6 +22,7 @@ const Faq = () => {
             paddingLeft={3}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '900',
             }}
           >
             Preguntas frecuentes
@@ -33,9 +36,10 @@ const Faq = () => {
             margin={2}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '900',
             }}
           >
-            Números de Remises/taxis:
+            ¿Números de Remises/taxis?
           </Typography>
           <ul>
             <li>
@@ -110,9 +114,10 @@ const Faq = () => {
             margin={2}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '900',
             }}
           >
-            Alquiler de autos:
+            ¿Dónde se pueden alquilar autos?
           </Typography>
           <ul>
             <li>
@@ -139,6 +144,7 @@ const Faq = () => {
             margin={2}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '900',
             }}
           >
             ¿Dónde alojarse? :

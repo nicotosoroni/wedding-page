@@ -11,12 +11,14 @@ import fondo4 from '../../assets/deco/fondo4.png';
 import fondo7 from '../../assets/deco/fondo7.png';
 import fondo8 from '../../assets/deco/fondo8.png';
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
+import MusicPlayer from '../../components/MusicContext/MusicPlayer';
 
 const Photos = () => {
   return (
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <MusicPlayer />
         <StyledPhotos>
           <Box
             className="esquinaSup"

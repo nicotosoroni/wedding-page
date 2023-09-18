@@ -10,6 +10,7 @@ import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco6.png';
 import fondo5 from '../../assets/deco/fondo5.png';
 import fondo6 from '../../assets/deco/fondo6.png';
+import MusicPlayer from '../../components/MusicContext/MusicPlayer';
 // import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 
 const Spotify = () => {
@@ -17,6 +18,7 @@ const Spotify = () => {
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <MusicPlayer />
         <StyledMusic>
           <Box
             className="esquinaSup"
@@ -28,13 +30,14 @@ const Spotify = () => {
             <img src={deco4} alt="photo" />
           </Box>
           <Typography
-            variant="h5"
+            variant="h4"
             component="h2"
             paddingTop={1}
             paddingLeft={3}
             marginBottom={5}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '900',
             }}
           >
             Make this day EPIC!

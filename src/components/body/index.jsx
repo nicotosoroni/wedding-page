@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import CountDown from '../countdown';
 import { Link } from 'react-router-dom';
 import deco1 from '../../assets/deco/deco1.png';
@@ -14,41 +13,42 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import useSound from 'use-sound';
-import boopSfx from '../../assets/music.mp3';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import StopIcon from '@mui/icons-material/Stop';
-import Button from '@mui/material/Button';
+// import useSound from 'use-sound';
+// import boopSfx from '../../assets/music.mp3';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import StopIcon from '@mui/icons-material/Stop';
+// import Button from '@mui/material/Button';
+import MusicPlayer from '../MusicContext/MusicPlayer';
 
-export const BoopButton = () => {
-  const [play, { stop }] = useSound(boopSfx);
-  const useMountEffect = (fun) => useEffect(fun, []);
+// export const BoopButton = () => {
+//   const [play, { stop }] = useSound(boopSfx);
+//   const useMountEffect = (fun) => useEffect(fun);
 
-  useMountEffect(play);
+//   useMountEffect(play);
 
-  return (
-    <Box
-      className="music"
-      sx={{
-        position: 'fixed',
-        top: { xs: '', md: '10px' },
-        right: '10px',
-        backgroundColor: 'rgb(193 188 140)',
-        borderRadius: { xs: '9px', md: '18px' },
-        opacity: '0.6',
-        width: { xs: '36px', md: '128px' },
-        bottom: { xs: '10px', md: 'auto' },
-      }}
-    >
-      <Button onClick={play} color="inherit">
-        <PlayArrowIcon />
-      </Button>
-      <Button onClick={() => stop()} color="inherit">
-        <StopIcon />
-      </Button>
-    </Box>
-  );
-};
+//   return (
+//     <Box
+//       className="music"
+//       sx={{
+//         position: 'fixed',
+//         top: { xs: '', md: '10px' },
+//         right: '10px',
+//         backgroundColor: 'rgb(193 188 140)',
+//         borderRadius: { xs: '9px', md: '18px' },
+//         opacity: '0.6',
+//         width: { xs: '36px', md: '128px' },
+//         bottom: { xs: '10px', md: 'auto' },
+//       }}
+//     >
+//       <Button onClick={play} color="inherit">
+//         <PlayArrowIcon />
+//       </Button>
+//       <Button onClick={() => stop()} color="inherit">
+//         <StopIcon />
+//       </Button>
+//     </Box>
+//   );
+// };
 
 const Body = () => {
   // const navigate = useNavigate();
@@ -59,7 +59,7 @@ const Body = () => {
     <Container maxWidth={false} disableGutters>
       <StyledBody>
         <Navbar />
-        <BoopButton />
+        <MusicPlayer />
         <div className="titleImg">
           <img className="decoImg" src={deco1} alt="photo" />
         </div>
@@ -159,7 +159,7 @@ const Body = () => {
         >
           <InstagramIcon />
           <Link
-            to="https://www.instagram.com/explore/tags/micaymauri/"
+            to="https://www.instagram.com/explore/tags/mauriymica/"
             target="_blank"
           >
             <Typography

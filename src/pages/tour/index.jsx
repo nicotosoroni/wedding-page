@@ -7,6 +7,7 @@ import deco4 from '../../assets/deco/deco4.png';
 import deco6 from '../../assets/deco/deco6.png';
 import { Link } from 'react-router-dom';
 import { StyledMap } from './styles';
+import MusicPlayer from '../../components/MusicContext/MusicPlayer';
 
 const TourPage = () => {
   const { isLoaded } = useLoadScript({
@@ -17,6 +18,7 @@ const TourPage = () => {
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <MusicPlayer />
         <StyledMap>
           <Typography
             variant="h5"

@@ -12,7 +12,7 @@ const CountDown = () => {
   const [minutos, setMinutos] = useState();
   const [segundos, setSegundos] = useState();
 
-  let countDown = new Date('Dec 08, 2023 20:00:00').getTime();
+  let countDown = new Date('Dec 08, 2023 18:30:00').getTime();
   let x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;

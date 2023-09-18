@@ -20,6 +20,7 @@ import {
   Select,
   StyledRegister,
 } from './styles';
+import MusicPlayer from '../../components/MusicContext/MusicPlayer';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyAIOSm6WVbjhDDMJcUCpnIcSaZ7zQ3jB3U',
@@ -100,6 +101,7 @@ const Register = () => {
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <MusicPlayer />
         <StyledRegister>
           <Box className="esquinaSup">
             <img src={fondo7} alt="photo" />
@@ -108,13 +110,14 @@ const Register = () => {
             <img src={deco4} alt="photo" />
           </Box>
           <Typography
-            variant="h5"
+            variant="h4"
             component="h2"
             paddingTop={1}
             paddingLeft={3}
             marginBottom={5}
             sx={{
               fontFamily: ' Comfortaa, cursive',
+              fontWeight: '900',
             }}
           >
             ¡Confirmanos tu asistencia!

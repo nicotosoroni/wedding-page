@@ -25,7 +25,7 @@ export const StyledGift = styled.div`
     position: fixed;
     bottom: 0;
     & img {
-      width: 70%;
+      width: 50%;
       @media (max-width: 500px) {
         width: 100%;
       }

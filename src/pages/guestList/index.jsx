@@ -13,6 +13,7 @@ import {
   TableHeading,
   StyledGestlist,
 } from './styles';
+import MusicPlayer from '../../components/MusicContext/MusicPlayer';
 
 const GuestList = () => {
   const [list, setList] = useState([]);
@@ -25,6 +26,7 @@ const GuestList = () => {
     messagingSenderId: '672472758358',
     appId: '1:672472758358:web:a7b4140dd3cf23b50aa3f7',
   };
+
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
@@ -38,6 +40,7 @@ const GuestList = () => {
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar />
+        <MusicPlayer />
         <Typography
           variant="h5"
           component="h2"
