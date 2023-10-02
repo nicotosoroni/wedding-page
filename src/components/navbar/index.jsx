@@ -60,7 +60,8 @@ const pages = [
   { name: 'Preguntas', url: '/pages/faq' },
 ];
 
-function Navbar() {
+// eslint-disable-next-line react/prop-types
+function Navbar({ isTop }) {
   const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -105,60 +106,72 @@ function Navbar() {
             LOGO
           </Typography> */}
 
-            {/* Mobile */}
-            <Box
-              sx={{
-                flexGrow: 1,
-                display: { xs: 'flex', md: 'none' },
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="red"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
+            {/* Mobile*/}
+            {isTop && (
+              <Box
                 sx={{
-                  display: { xs: 'block', md: 'none' },
+                  flexGrow: 1,
+                  display: { xs: 'flex', md: 'none' },
+                  justifyContent: 'flex-end',
                 }}
               >
-                {pages.map((page) => (
-                  <MenuItem
-                    key={page.name}
-                    onClick={() => handleCloseNavMenu(page.url)}
+                <IconButton
+                  size="large"
+                  aria-label="account of current user"
+                  aria-controls="menu-appbar"
+                  aria-haspopup="true"
+                  onClick={handleOpenNavMenu}
+                  color="red"
+                >
+                  <Typography
+                    marginRight={1}
+                    textAlign="center"
+                    sx={{
+                      fontFamily: 'Comfortaa',
+                      fontWeight: '700',
+                    }}
                   >
-                    <Typography
-                      textAlign="center"
-                      sx={{
-                        fontFamily: 'Comfortaa',
-                      }}
+                    MENU
+                  </Typography>
+                  <MenuIcon />
+                </IconButton>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorElNav}
+                  anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left',
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'left',
+                  }}
+                  open={Boolean(anchorElNav)}
+                  onClose={handleCloseNavMenu}
+                  sx={{
+                    display: { xs: 'block', md: 'none' },
+                  }}
+                >
+                  {pages.map((page) => (
+                    <MenuItem
+                      key={page.name}
+                      onClick={() => handleCloseNavMenu(page.url)}
                     >
-                      {page.name}
-                    </Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
+                      <Typography
+                        textAlign="center"
+                        sx={{
+                          fontFamily: 'Comfortaa',
+                        }}
+                      >
+                        {page.name}
+                      </Typography>
+                    </MenuItem>
+                  ))}
+                </Menu>
+              </Box>
+            )}
+
             {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -212,6 +225,43 @@ function Navbar() {
                 </Button>
               ))}
             </Box>
+
+            {/* Mbile no top */}
+            {!isTop && (
+              <Box
+                className={'mobileNoTop'}
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: 'flex', md: 'none' },
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                {pages.map((page) => (
+                  <Button
+                    key={page.name}
+                    onClick={() => handleCloseNavMenu(page.url)}
+                    sx={{
+                      my: 2,
+                      color: 'black',
+                      display: 'block',
+                      paddingLeft: '6px',
+                      paddingRight: '6px',
+                    }}
+                  >
+                    <Typography
+                      textAlign="center"
+                      sx={{
+                        fontFamily: 'Comfortaa',
+                        fontWeight: '700',
+                      }}
+                    >
+                      {page.name}
+                    </Typography>
+                  </Button>
+                ))}
+              </Box>
+            )}
           </Toolbar>
         </Container>
       </AppBar>

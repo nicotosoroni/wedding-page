@@ -39,7 +39,7 @@ const GuestList = () => {
   return (
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
-        <Navbar />
+        <Navbar isTop />
         <MusicPlayer />
         <Typography
           variant="h5"

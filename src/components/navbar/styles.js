@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const NavbarStyles = styled.div`
+  width: 100%;
   z-index: 10;
   /*
   margin: 15px auto;
@@ -38,4 +39,7 @@ export const NavbarStyles = styled.div`
   a.fromleft:after {
     transform-origin: 0 50%;
   } */
+  .mobileNoTop {
+    flex-wrap: wrap;
+  }
 `;

@@ -17,7 +17,7 @@ const Photos = () => {
   return (
     <Container maxWidth={'lg'} disableGutters>
       <Box sx={{ bgcolor: '#f4f0ef' }}>
-        <Navbar />
+        <Navbar isTop />
         <MusicPlayer />
         <StyledPhotos>
           <Box

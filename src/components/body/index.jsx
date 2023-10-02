@@ -58,7 +58,7 @@ const Body = () => {
   return (
     <Container maxWidth={false} disableGutters>
       <StyledBody>
-        <Navbar />
+        <Navbar isTop />
         <MusicPlayer />
         <div className="titleImg">
           <img className="decoImg" src={deco1} alt="photo" />
@@ -117,6 +117,7 @@ const Body = () => {
           </Typography>
         </Box>
         <hr />
+
         <div>
           <img className="decoImg" src={deco4} alt="photo" />
         </div>
@@ -241,7 +242,10 @@ const Body = () => {
         <Box marginBottom={3}>
           <CountDown />
         </Box>
-
+        <hr />
+        <Box sx={{ width: '85%', display: { xs: 'flex', md: 'none' } }}>
+          <Navbar isTop={false} />
+        </Box>
         {/* <hr />
         <div>
           <img className="decoImg" src={deco4} alt="photo" />
