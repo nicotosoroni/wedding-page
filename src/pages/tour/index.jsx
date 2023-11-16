@@ -8,6 +8,8 @@ import deco6 from '../../assets/deco/deco6.png';
 import { Link } from 'react-router-dom';
 import { StyledMap } from './styles';
 import MusicPlayer from '../../components/MusicContext/MusicPlayer';
+import photo4 from '../../assets/photo4.png';
+import photo13 from '../../assets/photo13.png';
 
 const TourPage = () => {
   const { isLoaded } = useLoadScript({
@@ -19,7 +21,7 @@ const TourPage = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar isTop />
         <MusicPlayer />
-        <StyledMap>
+        <StyledMap photo1={photo4} photo2={photo13}>
           <Typography
             variant="h5"
             component="h2"
@@ -210,10 +212,11 @@ const TourPage = () => {
               </Typography>
             </li>
           </ul>
-          {/* ----------------------------------------------- */}
+          <Box marginBottom={5} className="pepito1" />
           <div className="decoImg">
             <img src={deco6} alt="photo" />
           </div>
+          {/* ----------------------------------------------- */}
           <Typography
             variant="h6"
             component="h2"
@@ -486,10 +489,11 @@ const TourPage = () => {
               </Typography>
             </li>
           </ul>
-          {/* ----------------------------------------------- */}
+          <Box marginBottom={5} className="pepito2" />
           <div className="decoImg">
             <img src={deco6} alt="photo" />
           </div>
+          {/* ----------------------------------------------- */}
           <Typography
             variant="h6"
             component="h2"

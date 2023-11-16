@@ -5,6 +5,9 @@ import deco2 from '../../assets/deco/deco2.png';
 import deco3 from '../../assets/deco/deco3.png';
 import deco4 from '../../assets/deco/deco4.png';
 import deco5 from '../../assets/deco/deco5.png';
+import photo10 from '../../assets/photo10.png';
+import photo13 from '../../assets/photo13.png';
+import photo3 from '../../assets/photo3.png';
 // import deco6 from '../../assets/deco/deco6.png';
 // import { useNavigate } from 'react-router-dom';
 import { StyledBody } from './styles';
@@ -55,9 +58,10 @@ const Body = () => {
   // const viewGift = () => {
   //   navigate('/pages/gift');
   // };
+  console.log('deco5', photo10, photo13, photo3);
   return (
     <Container maxWidth={false} disableGutters>
-      <StyledBody>
+      <StyledBody photo1={photo10} photo2={photo13} photo3={photo3}>
         <Navbar isTop />
         <MusicPlayer />
         <div className="titleImg">
@@ -71,6 +75,7 @@ const Body = () => {
         </div>
         <hr />
         <Box
+          margin={5}
           sx={{
             width: '80%',
             textAlign: 'center',
@@ -89,7 +94,9 @@ const Body = () => {
           </Typography>
         </Box>
         <hr />
+
         <Box
+          margin={5}
           sx={{
             width: '80%',
             textAlign: 'center',
@@ -117,16 +124,16 @@ const Body = () => {
           </Typography>
         </Box>
         <hr />
-
+        <Box marginBottom={5} className="pepito1" />
         <div>
           <img className="decoImg" src={deco4} alt="photo" />
         </div>
         <Box
+          margin={2}
           sx={{
             width: '80%',
             textAlign: 'center',
           }}
-          margin={2}
         >
           <Typography
             variant="h4"
@@ -175,6 +182,7 @@ const Body = () => {
             </Typography>
           </Link>
         </Box>
+        <Box marginBottom={5} className="pepito2" />
         <div>
           <img className="decoImg" src={deco4} alt="photo" />
         </div>
@@ -242,6 +250,8 @@ const Body = () => {
         <Box marginBottom={3}>
           <CountDown />
         </Box>
+        <hr />
+        <Box marginBottom={5} className="pepito3" />
         <hr />
         <Box sx={{ width: '85%', display: { xs: 'flex', md: 'none' } }}>
           <Navbar isTop={false} />

@@ -7,6 +7,8 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import MusicPlayer from '../../components/MusicContext/MusicPlayer';
+import photo11 from '../../assets/photo11.png';
+import photo12 from '../../assets/photo12.png';
 
 const Faq = () => {
   return (
@@ -14,7 +16,7 @@ const Faq = () => {
       <Box sx={{ bgcolor: '#f4f0ef' }}>
         <Navbar isTop />
         <MusicPlayer />
-        <FAQStyles>
+        <FAQStyles photo1={photo11} photo2={photo12}>
           <Typography
             variant="h5"
             component="h2"
@@ -103,10 +105,11 @@ const Faq = () => {
               </Typography>
             </li>
           </ul>
-          {/* ----------------------------------------------- */}
+          <Box marginBottom={5} className="pepito1" />
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco6} alt="photo" />
           </Box>
+          {/* ----------------------------------------------- */}
           <hr />
           <Typography
             variant="h6"
@@ -283,6 +286,7 @@ const Faq = () => {
               </Typography>
             </li>
           </ul>
+          <Box marginBottom={5} className="pepito2" />
           <Box className="decoImg" marginTop={2} marginBottom={2}>
             <img src={deco6} alt="photo" />
           </Box>

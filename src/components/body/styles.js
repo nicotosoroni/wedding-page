@@ -91,6 +91,27 @@ export const StyledBody = styled.div`
       padding: 6px 0;
     }
   }
+
+  .pepito1 {
+    height: 900px;
+    width: 100%;
+    background: url(${(props) => props.photo1}) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .pepito2 {
+    height: 500px;
+    width: 100%;
+    background: url(${(props) => props.photo2}) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .pepito3 {
+    height: 900px;
+    width: 100%;
+    background: url(${(props) => props.photo3}) no-repeat center;
+    background-size: cover;
+  }
 `;
 
 export const Button = styled.button`

@@ -10,4 +10,18 @@ export const StyledMap = styled.div`
       height: auto;
     }
   }
+  .pepito1 {
+    height: 900px;
+    width: 100%;
+    background: url(${(props) => props.photo1}) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .pepito2 {
+    height: 900px;
+    width: 100%;
+    background: url(${(props) => props.photo2}) no-repeat center;
+    background-size: cover;
+  }
 `;
